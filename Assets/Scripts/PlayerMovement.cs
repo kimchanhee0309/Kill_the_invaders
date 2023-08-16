@@ -24,12 +24,14 @@ public class PlayerMovement : MonoBehaviour //사용자 입력에 따라 플레이어 캐릭터
     {
         //물리 갱신 주기마다 움직임, 회전, 애니메이션 처리 실행
         //회전 실행
-        Rotate();
+         Rotate();
         //움직임 실행
-        Move();
+         Move();
+
 
         //입력값에 따라 애니메이터의 Move 파라미터값 변경
         playerAnimator.SetFloat("Move", playerInput.move);
+
     }
 
     //입력값에 따라 캐릭터를 앞뒤로 움직임
